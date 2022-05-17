@@ -394,6 +394,13 @@ li {
   margin-left: 93px;
 }
 
+.contactslinks .item .nav-menu {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .maintext {
   background: #2f303a;
   padding: 200px 0;
@@ -416,6 +423,15 @@ li {
   margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.contacts-icon {
+  fill: var(--secondary-color);
+  margin-right: 10px;
+}
+
+.item .nav-menu:hover .contacts-icon {
+  fill: var(--accent-color);
 }
 
 .button {
@@ -455,6 +471,17 @@ li {
 
 .feature-list {
   display: flex;
+}
+
+.decorative-icons {
+  background: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .features-item {
@@ -511,6 +538,46 @@ img {
 .ourmembers {
   background-color: #f5f4fa;
 }
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.social-item {
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials-icon {
+  fill: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: var(--accent-color);
+}
+
+.social-link:hover .socials-icon,
+.social-link:focus .socials-icon {
+  fill: var(--primary-white-color);
+}
+
 .our-team {
   font-weight: 700;
   font-size: 36px;
@@ -526,6 +593,11 @@ img {
 .info-ofmember {
   margin-right: 30px;
   text-align: center;
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .info-ofmember:last-child {
@@ -585,6 +657,9 @@ img {
 .button-p:focus {
   background: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio .portfolio-photos {
@@ -602,6 +677,13 @@ img {
 
 .project-item:nth-child(n + 7) {
   margin-bottom: 0px;
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .nameof-projects {
@@ -630,10 +712,60 @@ img {
   display: flex;
 }
 
+.clients-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+}
+
+.our-clients {
+  display: flex;
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  margin-right: 30px;
+}
+
+.clients:last-child {
+  margin-right: 0;
+}
+
+.clients:hover,
+.clients:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clients:hover .client-icon,
+.clients:focus .client-icon {
+  fill: var(--accent-color);
+}
+
+.client-icon {
+  fill: #afb1b8;
+}
+
 .footer-info {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .connect-us {
@@ -674,4 +806,59 @@ img {
 
 .footer-info .logo-ws {
   color: var(--primary-white-color);
+}
+
+.follow-us {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.followus {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.follow-us .socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow-us .socials-item {
+  margin-right: 10px;
+}
+
+.follow-us .socials-item:last-child {
+  margin-right: 0;
+}
+
+.follow-us .socials-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow-us .socials-icon {
+  fill: var(--primary-white-color);
+}
+
+.follow-us .socials-link:hover,
+.follow-us .socials-link:focus {
+  background: var(--accent-color);
+}
+
+.follow-us .socials-link:hover .socials-icon,
+.follow-us .socials-link:focus .socials-icon {
+  fill: var(--primary-white-color);
 }

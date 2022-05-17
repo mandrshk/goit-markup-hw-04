@@ -57,19 +57,20 @@
             </li>
           </ul>
         </nav>
-        <ul class="contactslinks-ul auth-nav">
+        <ul class="contactslinks auth-nav">
           <li class="item">
             <a
               href="mailto:info@devstudio.com"
               class="links nav-menu email-ws"
+              aria-label="Mail Icon"
             >
               <svg
-                class="nav-icon"
+                class="contacts-icon"
                 width="16"
                 height="12"
               >
                 <use
-                  href="./images/"
+                  href="./images/icons.svg#icon-mail"
                 ></use>
               </svg>
               info@devstudio.com</a
@@ -79,7 +80,18 @@
             <a
               href="tel:+380961111111"
               class="links nav-menu phonenum-ws"
-              >+38 096 111 11 11</a
+              aria-label="Phone Icon"
+            >
+              <svg
+                class="contacts-icon"
+                width="10"
+                height="16"
+              >
+                <use
+                  href="./images/icons.svg#icon-phone"
+                ></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -296,41 +308,125 @@
       </section>
     </main>
     <footer class="footer-info">
-      <div class="container">
-        <a
-          href="#"
-          class="links logo-ws logo-webstudio"
-          ><span class="logospan">Web</span
-          >Studio</a
-        >
-        <address class="address-footer">
-          <ul class="footer-list">
-            <li>
+      <div class="container footer-container">
+        <div class="contact-info-footer">
+          <a
+            href="#"
+            class="links logo-ws logo-webstudio"
+            ><span class="logospan">Web</span
+            >Studio</a
+          >
+          <address class="address-footer">
+            <ul class="footer-list">
+              <li>
+                <a
+                  href="https://goo.gl/maps/YKN6UugqQtC8uNZw6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="links connect-us contacts-footer our-address"
+                >
+                  г. Киев, пр-т Леси Украинки,
+                  26</a
+                >
+              </li>
+              <li class="contacts">
+                <a
+                  href="mailto:info@example.com"
+                  class="links connect-us contacts-footer"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="contacts">
+                <a
+                  href="tel:+380991111111"
+                  class="links connect-us contacts-footer"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="container follow-us">
+          <p class="followus">Присоединяйтесь</p>
+          <ul class="socials-list">
+            <li class="socials-item">
               <a
-                href="https://goo.gl/maps/YKN6UugqQtC8uNZw6"
+                href=""
+                class="socials-link links"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="links connect-us contacts-footer our-address"
+                aria-label="Instagram"
               >
-                г. Киев, пр-т Леси Украинки, 26</a
-              >
+                <svg
+                  class="socials-icon"
+                  width="20"
+                  height="20"
+                >
+                  <use
+                    href="./images/icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
             </li>
-            <li class="contacts">
+            <li class="socials-item">
               <a
-                href="mailto:info@example.com"
-                class="links connect-us contacts-footer"
-                >info@example.com</a
+                href=""
+                class="socials-link links"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
               >
+                <svg
+                  class="socials-icon"
+                  width="20"
+                  height="20"
+                >
+                  <use
+                    href="./images/icons.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
             </li>
-            <li class="contacts">
+            <li class="socials-item">
               <a
-                href="tel:+380991111111"
-                class="links connect-us contacts-footer"
-                >+38 099 111 11 11</a
+                href=""
+                class="socials-link links"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
               >
+                <svg
+                  class="socials-icon"
+                  width="20"
+                  height="20"
+                >
+                  <use
+                    href="./images/icons.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                href=""
+                class="socials-link links"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin"
+              >
+                <svg
+                  class="socials-icon"
+                  width="20"
+                  height="20"
+                >
+                  <use
+                    href="./images/icons.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
